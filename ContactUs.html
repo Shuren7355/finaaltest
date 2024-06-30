@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styl/styles/contact.css">
+
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <div class="logo">
+      <img src="Gaimp.png" alt="Logo">
+    </div>
+    <nav>
+      <div><li class="dropdown-btn"><i id="dropdown-icon" class="fas fa-bars fa-caret-down"></i></li>
+      <ul class="nav-menu" id="dropdown-icon">
+        <li><a href="GaimClone.html">Home</a></li>
+        <li><a href="SchoolDash.html">School Portal</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="Gaimp.html">About Us</a></li>
+        <li><a href="index.html" class="logout">Logout</a></li></div>
+        <div class="dropdown-content">
+          <li><a href="GaimClone.html">Home</a></li>
+<li><a href="SchoolDash.html">School Portal</a></li>
+<li><a href="ContactUs.html">Contact Us</a></li>
+<li><a href="Gaimp.html">About Us</a></li>
+<li><a href="index.html" class="logout">Logout</a></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Your page content here -->
+<main>
+    <div class="content">
+        <div class="left-content">
+            <div class="headol">
+                <h1>Contact Us</h1>
+            </div>
+
+            <div class="additional-text">
+                <p>If you have any questions, feedback, or just want to say hello, we'd love to hear from you! Please fill out
+the contact form below, and we'll get back to you as soon as possible.</p>
+<p>Fill the form below to contact Us:</p>
+            </div>
+            
+            <!-- Google Form container -->
+<div class="google-form-container">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyt-ZhVpJaF_yjt8xXkYF7PSRC0mSoxn0QgvF4SV1iq-D3XA/viewform?embedded=true" width="300" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+</div>
+
+            <div class="subject-list">
+                <button class="subject" onclick="toggleVisibility('additionalText1')">How can I be reached?</button>
+                <div class="hidden-content" id="additionalText1">
+                    <p>You can get in touch with me through the contact form provided on this page. I welcome your inquiries, feedback, or any other messages you'd like to share.</p>
+                </div>
+                <button class="subject" onclick="toggleVisibility('additionalText2')">Do I need to provide specific details?</button>
+                <div class="hidden-content" id="additionalText2">
+                    <p>No, you can simply fill out the form with your message, and I'll get back to you as soon as possible. Every message is important to me.</p>
+                </div>
+                <button class="subject" onclick="toggleVisibility('additionalText3')">How will my message be handled?</button>
+                <div class="hidden-content" id="additionalText3">
+                    <p>Your message will be promptly attended to. Whether it's a question, suggestion, or request for collaboration, I look forward to hearing from you and will respond accordingly.</p>
+                </div>
+            </div>
+        </div>
+        <span class="ubuntu-light" style="margin-top: 20px;">&copy;2024 Gaimp all rights are reserved</span>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="styl/styles/contact.js"></script>
+</body>
+</html>

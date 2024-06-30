@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Education Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styl/styles/detail.css">
+</head>
+<body>
+    <header>
+      <button id="backButton" class="arrow"><i class="fas fa-arrow-left"></i> </button>
+        <h1>Faq - Regarding Online Verification of Certificate</h1> 
+    </header>
+    <div class="container">
+        <h2><button class="btn" onclick="toggleVisibility('story')">How to apply for the Online verification of Certificate?</button></h2>
+        <div id="story" class="hidden-content">
+            <p>You can apply for the Online Verification of Certificate on the Punjab School Education Board website https://pseb.ac.in/ through the link given below. Please follow link: -‘Home-> Online Forms-> Apply for Second Copy of Certificate-> Apply Online Verification of Certificate'.</p>
+            
+            <!-- More content goes here -->
+        </div>
+        
+        <h2><button class="btn" onclick="toggleVisibility('goals')">How much fee I must deposit?</button></h2>
+        <div id="goals" class="hidden-content">
+            <p>Please follow link((https://www.pseb.ac.in/) ‘Home-> Online Forms-> Apply For Second Copy of Certificate-> Apply For Online Verification Of Certificate' for getting your fee details.</p>
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('target-audience')">How can I check the status of my online application?</button></h2>
+        <div id="target-audience" class="hidden-content">
+            <p>Please follow the link(https://www.pseb.ac.in/) ‘Home-> Online Forms-> Apply For Second Copy of Certificate-> Apply-> Second Copy of Certificate->Check Application Status'. You can find your application status with Registration Number or Case Number or Roll Number.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('concept')">To which address Online Verification of Certificate will be sent?</button></h2>
+        <div id="concept" class="hidden-content">
+            <p>Verification of Certificate will be uploaded on the login id of the user in the form of a PDF.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('journey')">How to track the Online verification of certificate?</button></h2>
+        <div id="journey" class="hidden-content">
+            <p>No hard copy will be sent, only a PDF file will be uploaded on the user login id.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('call-to-action')">Which documents are required for verification of certificate?</button></h2>
+        <div id="call-to-action" class="hidden-content">
+            <p>Coloured scanned copy of original certificate and department letter in case of Online verification of certificate.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('mission')">How much fee I must deposit for Online verification of certificate?</button></h2>
+        <div id="mission" class="hidden-content">
+            <p>After applying for Online verification of certificate, fee shall be calculated by the software.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('conclusion')">Can I apply manually for verification of certificate rather than Online verification of certificate?</button></h2>
+        <div id="conclusion" class="hidden-content">
+            <p>Yes , you can also apply manually for verification of certificate. For you have to come to Head office of PSEB and submit the original certificate. After checking the documents dealing will calculate the fee.</p>
+            
+            <!-- More content goes here -->
+        </div>
+        
+        
+        
+        <h2><button class="btn" onclick="toggleVisibility('verification')">Can I submit certificate and fee through different modes for verification of certificate?</button></h2>
+<div id="verification" class="hidden-content">
+  <p>Yes , you can submit the certificate through post and you can submit the fee through Demand Draft in the favour of Secretary, Punjab School Education Board.</p>
+
+  <!-- More content goes here -->
+</div>
+
+
+<h2><button class="btn" onclick="toggleVisibility('verify')">Can you verify the photocopies of Certificate.</button></h2>
+<div id="verify" class="hidden-content">
+  <p>No , PSEB will only verify the Original documents and check the authenticity of certificate. In case of Online verification of certificate we match the content of certificate with our record. If you want to check the authenticity of certificate you have to follow the manual process of verification.</p>
+
+  <!-- More content goes here -->
+</div>
+
+<h2><button class="btn" onclick="toggleVisibility('submit')">If I submit the manual certificate manually then how will you send the verification of certificate.</button></h2>
+<div id="submit" class="hidden-content">
+  <p>In this case we send the verification of certificate through Registered post to the department from where the certificate has come for verification.</p>
+
+  <!-- More content goes here -->
+</div>
+    </div>
+    <div style="position: down; bottom: 100px; right: 130px;">
+    <a href="ByMeACoffee.html">
+      <img src="https://svgsilh.com/svg/654328.svg" alt="Coffee Cup Icon" width="40" height="40">
+    </a>
+  </div>
+    <script>
+        function toggleVisibility(id) {
+            var content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        document.getElementById('backButton').addEventListener('click', function() {
+    window.history.back();
+});
+
+    </script>
+</body>
+</html>

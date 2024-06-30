@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/app/path/pathcs/path.css">
+</head>
+<body>
+<div class="background-video">
+  <video src="https://motionbgs.com/dl/hd/3509" autoplay loop muted></video>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#"> <!-- https://www.svgrepo.com/show/252851/fox.svg -->
+    <img src="Gaimp.png" width="50" height="50" class="d-inline-block align-top" alt="" >
+  </a> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="cdash.html">Parents Portal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://tryeveryyou.blogspot.com/p/contact-us.html">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://tryeveryyou.blogspot.com/p/about-us.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="condon.html">Donate Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="login-container">
+        <h2 class="text-center mb-4" style="font-size: 32px; font-weight: bold;">Students Dashboard</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember Me</label>
+          </div>
+          <button type="button" class="btn btn-primary btn-login" onclick="submitForm()">Login</button>
+          <div class="form-group form-check">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="emergency-dropdown">
+  <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/dropdown-1667918-2039411.png?f=webp&w=256" alt="Phone Icon" width="20" height="20" style="margin-right: 5px;">
+  <span>Emergency Numbers</span>
+  <div class="emergency-dropdown-content">
+    <p class="emergency-number" onclick="callEmergencyNumber('1091')">Women Helpline: 1091</p>
+    <p class="emergency-number" onclick="callEmergencyNumber('100')">Police: 100</p>
+    <p class="emergency-number" onclick="callEmergencyNumber('101')">Fire: 101</p>
+    <p class="emergency-number" onclick="callEmergencyNumber('102')">Ambulance: 102</p>
+    <p class="emergency-number" onclick="callEmergencyNumber('108')">Disaster Management Services: 108</p>
+    <p class="emergency-number" onclick="callEmergencyNumber('1097')">Aids Helpline: 1097</p>
+    <p class="emergency-number" onclick="callEmergencyNumber('139')">Railway Enquiry: 139</p>
+    <p class="emergency-number" onclick="callEmergencyNumber('1906')">LPG Leak Helpline: 1906</p>
+    <p class="emergency-number" onclick="callEmergencyNumber('112')">National Emergency Number: 112</p>
+  </div>
+</div><br><br>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="styles/app/path/pathjs/path.js">
+    </script>
+</body>
+</html>

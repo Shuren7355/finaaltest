@@ -1,0 +1,415 @@
+     /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+margin-top: 7%;
+            
+        }
+
+        .headol {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 40px; /* Increased margin */
+            margin-left: 20px; /* Added left margin */
+            animation: slideInFromLeft 1s ease; /* Animation for left margin */
+        }
+
+        .headol h1 {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 3.5rem; /* Increased font size */
+            color: #333; /* Adjusted color */
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 600px; /* Limiting content width */
+        }
+
+       
+        
+        .google-form-container:hover {
+            transform: scale(1); /* Zoom effect on hover */
+        }
+
+        .google-form-container {
+            width: auto; /* Adjust QR code container size */
+            border-radius: 90px;
+            position: static; /* Remove absolute positioning */
+            margin: 0 auto; /* Center align */
+            margin-top: 20px; /* Add top margin */
+            margin-bottom: 70px;
+            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+            background-position: center;
+        }
+        
+        
+        @media only screen and (min-width: 768px) {
+    body {
+        padding: 30px; /* Example: Increased padding for larger screens */
+        margin-top: 5%; /* Example: Adjusted margin-top for larger screens */
+    }
+
+    .google-form-container {
+        width: 400px; /* Example: Adjusted width for larger screens */
+        height: 500px; /* Example: Adjusted height for larger screens */
+        /* Additional styles as needed */
+    }
+}
+
+        .additional-text {
+padding: 20px;
+            background-color: #f9f9f9; /* Light background color */
+            margin-top: 20px; /* Space above additional text */
+            animation: slideInFromBottom 1s ease; /* Animation for slide-in effect */
+            margin-right: 40%;
+            margin-top: 50px;
+            width: 920px;
+}
+
+.additional-text p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem; /* Increased font size */
+    line-height: 1.6;
+    color: #333; /* Darker text color for better readability */
+    width: 900px;
+}
+
+        @media only screen and (min-width: 768px) {
+            .headol {
+                margin-bottom: 60px; /* Increased margin */
+            }
+
+            .content {
+                flex: 1;
+            }
+
+             .google-form-container {
+                width: 270px; /* Adjust container width for larger screens */
+                height: 250px; /* Adjust container height for larger screens */
+                position: absolute;
+                top: 170px;
+                right: 160px;
+            }
+            
+            .additional-text {
+                margin-top: 40px; /* Increased space above additional text */
+            }
+        }
+
+        /* Keyframes for animations */
+        @keyframes slideInFromLeft {
+            0% {
+                margin-left: -200px; /* Start off-screen */
+            }
+            100% {
+                margin-left: 20px; /* Slide in to left margin */
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                margin-right: -200px; /* Start off-screen */
+            }
+            100% {
+                margin-right: 0; /* Slide in to right margin */
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateY(100%); /* Start off-screen */
+            }
+            100% {
+                transform: translateY(0); /* Slide in to visible */
+            }
+        }
+        
+        .subject-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left */
+            margin-top: 30px;
+            margin-left: 20px; /* Add left margin for better alignment */
+        }
+
+        .subject {
+            width: 450px; /* Default width of buttons */
+            margin: 10px 0; /* Added vertical margin between buttons */
+            padding: 17px 17px; /* Padding inside the buttons */
+            border: none;
+            border-radius: 30px; /* Increased border-radius for more rounded corners */
+            background-color: rgba(187, 222, 251, 0.8);
+            color: black;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+        }
+
+        .subject:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white; /* Change text color on hover */
+        }
+
+        .hidden-content {
+            display: none; /* Initially hide all hidden content */
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .show {
+            display: block; /* Display hidden content when 'show' class is added */
+        }
+        
+        /* CSS for smaller screens */
+@media only screen and (max-width: 767px) {
+    body {
+        padding: 10px; /* Reduced padding for smaller screens */
+        margin-top: 20%; /* Remove excessive top margin */
+    }
+
+    .headol {
+        justify-content: center; /* Center align headol text */
+        margin-left: 0; /* Remove left margin */
+        
+    }
+
+    .headol h1 {
+        font-size: 2.5rem; /* Decrease font size for smaller screens */
+    }
+
+    .additional-text {
+        margin-right: 0; /* Remove excessive right margin */
+        margin-top: 20px; /* Adjust top margin */
+        padding: 15px; /* Reduce padding */
+        transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        width: 390px;
+    }
+    
+    .additional-text p{
+      width: 370px;
+    }
+
+    .google-form-container {
+        width: auto; /* Adjust QR code container size */
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; /* Add top margin */
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        background-position: center;
+        padding: 20px 0;
+    }
+
+    .subject-list {
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .subject {
+        width: 100%; /* Full width buttons */
+        margin: 8px 0; /* Adjust margin */
+        padding: 15px; /* Adjust padding */
+        font-size: 0.9rem; /* Decrease font size */
+    }
+
+    .hidden-content {
+        padding: 8px; /* Adjust padding */
+        margin-bottom: 15px; /* Adjust bottom margin */
+    }
+}
+    
+     header {
+            background-color: rgba(187, 222, 251, 0.8); /* Updated header background color */
+            color: #333; /* Updated text color */
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+            border-radius: 20px; /* Rounded corners for top-left and top-right */
+            position: fixed;
+            width: 98%;
+            top: 20px;
+             backdrop-filter: blur(2px); /* Adds a blurred effect */
+    -webkit-backdrop-filter: blur(2px); /* For Safari */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            max-width: 50px; /* Limit logo size */
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-menu li {
+            position: relative;
+            padding: 10px;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem; /* Adjusted font size for smaller screens */
+            transition: color 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .nav-menu li a:hover {
+            color: black; /* Hover color */
+        }
+
+        .nav-menu li a::before {
+            content: '';
+            position: absolute;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            top: -10px;
+            left: -10px;
+            border-radius: 20px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-menu li a:hover::before {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-btn {
+            display: none; /* Initially hide dropdown button */
+        }
+
+        .dropdown-btn i {
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            z-index: 100;
+            transition: opacity 0.3s ease; /* Fade-in animation */
+    opacity: 0; /* Start with opacity 0 */
+    pointer-events: none; /* Initially disable pointer events */
+        }
+
+        .nav-menu li:hover .dropdown-content {
+             display: block;
+    opacity: 1; /* Fade-in when visible */
+    pointer-events: auto; /* Enable pointer events */
+        }
+
+        .nav-menu li a.logout {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .nav-menu li a.logout:hover {
+            background-color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            header {
+                border-radius: 20px; /* No rounded corners on smaller screens */
+                width: 96%;
+top: 20px;
+            }
+
+            .logo img {
+                max-width: 40px; /* Adjust logo size for smaller screens */
+            }
+
+            .nav-menu {
+                flex-direction: column; /* Stack menu items vertically */
+                gap: 20px;
+                position: absolute;
+                top: 60px;
+                margin-top: 5%;
+                right: 20px; /* Adjust right distance */
+                background-color: #bbdefb; /* Updated background color */
+                padding: 20px;
+                border-radius: 20px; /* Rounded corners for mobile menu */
+                display: none; /* Initially hide menu for smaller screens */
+            }
+
+            .nav-menu.open {
+                display: flex; /* Show menu when open class is applied */
+            }
+
+            .nav-menu li {
+                padding: 5px 0;
+                position: relative;
+            }
+
+            .nav-menu li a {
+                padding: 10px;
+                width: 100%;
+            }
+
+            .nav-menu li a {
+                font-size: 0.9rem; /* Adjusted font size for smaller screens */
+            }
+
+            .dropdown-btn {
+                display: inline-block; /* Display dropdown button */
+            }
+
+            .dropdown-content {
+                width: 100%;
+                right: 0;
+                top: initial;
+                left: 0;
+            }
+        }
+        
+        .ubuntu-light {
+          position: absolute; /* or absolute */
+          left: 45%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #bbbbbb;
+}
+
+@media only screen and (max-width: 767px){
+  .ubuntu-light {
+    position: absolute; /* or absolute */
+          left: 20%;
+  }
+}
